@@ -1,0 +1,5 @@
+# PDF Documents
+*.pdf
+
+# VS Code files
+.vscode
