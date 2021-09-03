@@ -1,0 +1,53 @@
+{
+	"name": "racoondevstudio-exam",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/server.js",
+	"engines": {
+		"node": "14.x"
+	},
+	"scripts": {
+		"dev": "NODE_ENV=development nodemon --exec babel-node -r dotenv/config src/server.js",
+		"build": "babel src --out-dir dist --ignore src/**/*.test.js",
+		"start": "node dist/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/betonajera9/RacoonDevStudio-Exam"
+	},
+	"keywords": [
+		"node"
+	],
+	"author": "Beto Nájera <beto_najera@comunidad.unam.mx>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/betonajera9/RacoonDevStudio-Exam/issues"
+	},
+	"homepage": "https://github.com/betonajera9/RacoonDevStudio-Exam#readme",
+	"dependencies": {
+		"@babel/runtime": "^7.14.0",
+		"chalk": "^4.1.1",
+		"cors": "^2.8.5",
+		"dotenv": "^9.0.2",
+		"express": "^4.17.1",
+		"helmet": "^4.6.0",
+		"joi": "^17.4.2",
+		"log-symbols": "^4.1.0",
+		"mongodb": "^3.6.6"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.13.16",
+		"@babel/core": "^7.14.2",
+		"@babel/node": "^7.14.2",
+		"@babel/plugin-transform-runtime": "^7.14.2",
+		"@babel/preset-env": "^7.14.2",
+		"eslint": "^7.26.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-config-standard": "^16.0.2",
+		"eslint-plugin-import": "^2.23.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.3.1",
+		"nodemon": "^2.0.7",
+		"prettier": "^2.3.0"
+	}
+}
